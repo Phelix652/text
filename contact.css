@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #8fc9ff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+/*PUTU logo*/
+.logo{
+    color: #2b695c;
+    margin-right: 270px;
+    transition: .4s ease-in-out;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.logo:hover {
+  color: #173b34;
+}
+.logo .tooltiptext {
+  visibility: hidden;
+  width: 6em;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  left: 120%;
+ } 
+ .logo .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
+ }
+ .logo:hover .tooltiptext {
+  visibility: visible;
+ }
+/*navigation bar*/
+.navigation a {
+    text-decoration: none;
+    color: #2b695c;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 9px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}

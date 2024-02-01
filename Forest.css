@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #8fc9ff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+/*PUTU logo*/
+.logo{
+    color: #2b695c;
+    margin-right: 270px;
+    transition: .4s ease-in-out;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.logo:hover {
+  color: #173b34;
+}
+.logo .tooltiptext {
+  visibility: hidden;
+  width: 6em;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  left: 120%;
+ } 
+ .logo .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
+ }
+ .logo:hover .tooltiptext {
+  visibility: visible;
+ }
+/*navigation bar*/
+.navigation a {
+    text-decoration: none;
+    color: #2b695c;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 9px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+.MyWebsite {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+#text {
+    position: absolute;
+    font-size: 6.5em;
+    background-image: url("Forestimg.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.MyWebsite img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.MyWebsite .for2css{
+    width: 40%;
+    margin-left: 60%;
+    margin-top: -10%;
+}
+.MyWebsite .for1css{
+    width: 40%;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px; 
+    display: flex;
+}
+/*paragraph*/
+.introparagraph {
+    position: relative;
+    background: #003329;
+    margin-left: -70px;
+    padding: 100px; 
+    width: 93%;
+}
+.question {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.paragraph {
+    font-size: 24px;
+    color: #fff;
+    background: rgb(0, 44, 35);
+}
+.questionOfTheImage{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;    
+    margin-top: 10%;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #f1b900;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+    margin-left: 18%;
+    margin-top: -3%;
+}
+.forectPa{
+    position: relative;
+    background: #006d57;
+    margin-left: -70px;
+    padding: 100px; 
+    width: 93%;
+}
+.Amazon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    margin-top: 5%;
+}
+.AA{
+    position: absolute;
+    font-size: 6.5em;
+    background-size: cover;
+    margin-top: -30%;
+    margin-left: 29%;
+    font-weight: bold;
+    color: #fff;
+}
+.Borneo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+.AA2{
+    position: absolute;
+    font-size: 6.5em;
+    background-size: cover;
+    margin-top: -30%;
+    margin-left: 14%;
+    font-weight: bold;
+    color: #fff;
+}
+.Valdivian{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+.AA3{
+    position: absolute;
+    font-size: 6.5em;
+    background-size: cover;
+    margin-top: -30%;
+    margin-left: 25%;
+    font-weight: bold;
+    color: #fff;
+}
+.BB{
+    position: absolute;
+    font-size: 4em;
+    background-size: cover;
+    margin-top: -20%;
+    margin-left: 33%;
+    color: #fff;
+}
+.bol{
+    margin-left: 4.5%;
+}
+.paragraphOfAmazon{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.616);
+    margin-top: -9%;
+    font-size: 26px;
+    color: #fff;
+    width: 1235px;
+}
+.pa2{
+    margin-top: 5%;
+}
+/*Show More button*/
+.secSM {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background: #006d57;
+    padding: 40px; 
+    margin-top: -5%;
+}
+button {
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 6px 15px;
+    position: relative;
+    transition: .4s ease-in-out;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #359381;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    border: 1px solid rgb(13, 236, 225);
+    background: #359381;
+  }
+
+  button:hover a{
+    color: #fff;
+  }
+  
+  button:active {
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  .b2{
+    margin-left: 10%;
+  }

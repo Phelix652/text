@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #8fc9ff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+/*PUTU logo*/
+.logo{
+    color: #2b695c;
+    margin-right: 270px;
+    transition: .4s ease-in-out;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.logo:hover {
+  color: #173b34;
+}
+.logo .tooltiptext {
+  visibility: hidden;
+  width: 6em;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 1%;
+  left: 120%;
+ } 
+ .logo .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.87) transparent transparent;
+ }
+ .logo:hover .tooltiptext {
+  visibility: visible;
+ }
+/*navigation bar*/
+.navigation a {
+    text-decoration: none;
+    color: #2b695c;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 9px;
+    font-weight: 600;
+}
+.navigation a:hover, 
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+.MyWebsite {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+#text {
+    position: absolute;
+    font-size: 6.5em;
+    background-image: url("footofanimals.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.MyWebsite img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.MyWebsite .bird{
+    width: 10%;
+    margin-top: 7%;
+    margin-left: 80%;
+}
+.MyWebsite .tiger{
+    width: 30%;
+    margin-top: 37%;
+    margin-left: 74%;
+}
+.MyWebsite .elephants{
+    width: 40%;
+    margin-top: 23%;
+    margin-left: -20px;
+}
+/*paragraph*/
+.introparagraph {
+    position: relative;
+    background: #003329;
+    margin-left: -45px;
+    padding: 100px; 
+    width: 93%;
+}
+.question {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.paragraph {
+    font-size: 24px;
+    color: #fff;
+    background: rgb(0, 44, 35);
+}
+mark {
+    margin-left: 30px;
+}
+.questionOfTheImage{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;    
+    margin-top: 10%;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+/*image*/
+/*row 1*/
+.sec {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    background: #003329;
+    margin-top: -80px;
+}
+/*row 2*/
+.sec2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    background: #003329;
+    margin-top: -200px;
+}
+.container {
+    display: flex;  
+    margin-top: -70px;  
+}
+.card {
+    width: 310px;
+    height: 370px;
+    margin: 50px;
+    margin-top: -50px;
+    overflow: hidden;  
+    border-radius: 10px;  
+}
+.ima {
+    height: 400px;
+    width: 320px;    
+    transition: .5s;
+}
+.intro {
+    height: 80px;
+    width: 310px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .5s;
+    border-radius: 10px;  
+    overflow: hidden;  
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+.p1{
+    font-size: 15px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 220px;
+    bottom: 240px;
+    background: rgba(0, 0, 0, 0.582);
+    box-shadow: 5px 5px 20px black;
+}
+.card:hover .p1{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .ima{
+    transform: scale(1.1);
+}
+/*Show More button*/
+.secSM {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background: #003329;
+    margin-top: -200px;
+}
+button {
+    margin-top: 5%;
+    border-radius: 20px;
+    padding: 6px 15px;
+    position: relative;
+    transition: .4s ease-in-out;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #359381;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    border: 1px solid rgb(13, 236, 225);
+    background: #359381;
+  }
+
+  button:hover a{
+    color: #fff;
+  }
+  
+  button:active {
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+  }
+  .b2{
+    margin-left: 10%;
+  }
